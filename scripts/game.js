@@ -9,17 +9,20 @@ window.onload = function (){
 }
 
 var myPaddleY = 40,
-    aiPaddleY = 40,
-    paddleThickness = 10,
-    paddleHeight = 100,
-    ballXvelocity = 50,
-    ballYvelocity = 50,
-    ballDimension = 6,
-    xVelocity = 4,
-    yVelocity = 4,
-    aiPaddle = 2,
-    canvasObj = document.getElementById('gc'),
-    canvasArea = canvasObj.getContext("2d");
+aiPaddleY = 40,
+paddleThickness = 10,
+paddleHeight = 100,
+ballXvelocity = 50,
+ballYvelocity = 50,
+ballDimension = 6,
+xVelocity = 4,
+yVelocity = 4,
+aiPaddle = 2,
+canvasObj = document.getElementById('gc'),
+canvasArea = canvasObj.getContext("2d");
+
+localStorage.myScore = 0;
+localStorage.aiScore = 0;
 
 // Reset Game
 function reset(){
